@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>Mini-Activity</title>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Mini-Activity</h1>
+  <br>
+  <div class="wrap">
+  <h2>Base of the Parallelogram</h2>
+  <br>
+  <input
+    id="inputValue"
+    type ="text1"
+    value = ""
+    name= ""
+    placeholder="Input">
+  <br>
+  <h2>Height</h2>
+  <input
+    id="inputValue2"
+    type ="text2"
+    value = ""
+    name= ""
+    placeholder="Input">
+
+  <input
+    type="submit"
+    value="submit"
+    class="button"
+    onclick="myFunction()">
+  </div>
+
+  <script>
+    function myFunction(){
+      var base = document.getElementById("inputValue").value
+  		var height = document.getElementById("inputValue2").value
+      var area_parallelogram = base * height;
+
+      alert("Area of the parallelogram is " + area_parallelogram);
+    }
+  </script>
+</body>
+</html>
